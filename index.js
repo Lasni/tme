@@ -6,7 +6,7 @@ const currentDir = process.cwd();
 
 const run = async () => {
   await runner.collectFiles(currentDir);
-  console.log(runner.testFiles);
+  runner.runTests();
 };
 
 run();
